@@ -1,0 +1,52 @@
+Anotações orientação a objetos curso PHP
+
+*Abstração - uma classe representa uma abstração, a abstração representa a interpretação de um conceito do mundo real adaptando-o para a 
+necessidade de um determinado sistema.
+
+* A classe representa um determinado de tipo de estrutura de dados com atributos, metodos, construtores ....
+
+* Objeto é sinonimo de instancia, ou seja objeto é uma instancia de uma classe, ex: existe uma classe Cliente pode ser instanciado
+3 objetos do tipo cliente com variações de valores em seus atributos
+
+
+* A diferença de classe e objeto pode ser exemplificada da seguinte forma: a classe seria como um molde para ser utilizado para criar vamos
+supor um boneco, quantos moldes são necessários para criar 5 bonecos, apenas 1. O molde seria a classe neste exemplo enquanto os bonecos seriam
+os objetos com variações de valores em seus atributos porem o molde é o mesmo par a criaçõ de todos
+
+
+* Metodo construtor
+presenta na maioria das classes é responsável por gerar um novo objeto populando o mesmo com valors que são repassados como paramtros ao metodo
+construtor. Em algumas vezes pode ser que o construtor seja chamado e objeto seja criado com atributos vazios devido a não existir a passagem
+de paramtros.
+
+*Membros de uma classe: seriam todos os componentes que compõem uma determinada classe podendo ser
+atributos
+constantes
+metosos
+construtor
+destrutor
+dentre outros.
+
+* Variavel de classe e varivavel de objeto
+
+O que define se um atributo pertence a uma classe ou a um objeto é a declaração static
+
+para acessar em php atributos de uma classe se utiliza o seguinte simbolo ->
+exemplo acessando o atributo nome de um objeto pessoa 
+
+$pessoa->nome;
+
+para acessar atributos estaticos de um objeto deve se utilizar os caractetes :: 
+exemplo acessando um metodo estatico da de uma classe pessoa
+
+class Pessoa{
+
+  public static function andar(){
+
+   }
+
+}
+
+fora da classe
+
+Pessoa::andar();
